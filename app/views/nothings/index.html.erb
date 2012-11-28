@@ -1,0 +1,23 @@
+<h1>Listing nothings</h1>
+
+<table>
+  <tr>
+    <th>Message</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @nothings.each do |nothing| %>
+  <tr>
+    <td><%= nothing.message %></td>
+    <td><%= link_to 'Show', nothing %></td>
+    <td><%= link_to 'Edit', edit_nothing_path(nothing) %></td>
+    <td><%= link_to 'Destroy', nothing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Nothing', new_nothing_path %>
