@@ -1,5 +1,9 @@
-require 'spec_helper'
+
 
 describe Nothing do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it "should be able to save a message" do
+    m='some message'
+    Nothing.create!(message: 'some message')
+    Nothing.last.message.should == m 
+  end
 end

@@ -11,5 +11,8 @@ require 'spec_helper'
 #   end
 # end
 describe NothingsHelper do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it 'should demonstarte one is one' do
+    1.should equal 1
+  end
+
 end
