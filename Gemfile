@@ -39,3 +39,5 @@ gem 'jquery-rails'
 
 
 gem 'rspec-rails'
+
+gem 'simplecov', :require => false, :group => :test #test coverage
